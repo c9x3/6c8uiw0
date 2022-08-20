@@ -1,0 +1,174 @@
+<html>
+<head>
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://c9x3.github.io/7n4gx53h/Hydrogen_32x32.png" />
+
+<!-- 
+
+Styling
+
+-->
+
+<style type="text/css">
+
+  /* */
+  
+  html {
+  
+  background-color: #181a1b;
+  color: lightgreen;
+  font-family: sans-serif;
+  font-size: 130%; /* Background color for HTML. */
+  
+  } 
+  
+  /* */
+  
+  body {
+  
+  max-width: 40em; 
+  margin-left: auto;
+  margin-right: auto; /* Start of centering */
+  
+  }
+
+  input, button {
+
+  background-color: #181a1b;
+  color: lightgreen;
+  border-color: black;
+
+  }
+  
+  /* */
+
+  </style>
+
+<!--
+
+End of styling.
+
+-->
+
+    <title>C9x3's zxcvbn tool</title>
+
+    <script type="text/javascript" src="http://127.0.0.1:8080/jquery.js">
+    </script>
+    <script type="text/javascript" src="http://127.0.0.1:8080/mustache.js">
+    </script>
+    <script data-main="demo" src="http://127.0.0.1:8080/require.js">
+    </script>
+  </head>
+  <body>
+    <style type="text/css">
+
+      body {
+        font-family: monospace;
+      }
+
+/* Match sequence table text color */ 
+
+      .match-sequence table {
+        display: inline;
+        margin-right: 30px;
+        color: orange;
+      }
+
+      .match-sequence {
+        margin-bottom: 100px;
+      }
+
+/* Weird line thing
+
+      .match-sequence > table:nth-child(odd) {
+        background-color: #ccc;
+      }
+      .match-sequence > table:nth-child(even) {
+        background-color: #eee;
+      }
+
+*/
+
+/* Examples container background color */ 
+
+      #examples-container {
+        margin-top: 200px;
+        background-color: transparent;
+      }
+
+/* Allows the color of hyperlinked text to be changed. */
+
+a {
+    
+    color: inherit;
+    text-decoration: none;
+    
+    }
+
+/* Must be hovering over the hyperlinked text in order to see the underline. */
+
+    a:hover {
+
+    text-decoration: underline;
+    
+    } 
+
+/* Table text color */ 
+
+    table {
+
+    color: lightgreen;
+
+}
+
+/* Match sequence background color */
+
+      div.match-sequence {
+
+      background-color: transparent;
+
+      }
+
+/* End of style */ 
+
+    </style>
+
+<font color="lightgreen"> <!-- Changing font color. -->
+
+    <h1>C9x3's zxcvbn tool</h1> 
+
+    <br>
+
+<!-- Spawn page reset button -->
+
+<button onClick="window.location.href=window.location.href" title="Clicking this WILL reset this webpage.">Refresh Page ⟳</button>
+
+</font> <!-- End of changing font color. -->
+
+<a target="_blank" href="https://c9x3.github.io/86d24jsg462/ProjectInfo.html">Project information</a>. 
+
+<br><br>
+
+Type in a password to get an estimate of how long it would take to crack that password. This tool runs offline (you must self host the dependencies) and online (runs locally within your Browser.)
+
+<br><br>
+
+    <input id="search-bar" type="text" size="50" />
+
+    <div id="search-results">
+
+    </div>
+
+    <div id="examples-container"> <br>
+    
+  <font color="lightgreen"> <!-- Changing font color. -->
+    
+    <h1 id="examples">Examples:</h1>
+    
+  </font> <!-- End of changing font color. -->
+    
+  <div id="results">
+    </div>
+
+  </body>
+</html>
